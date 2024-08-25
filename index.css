@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+li {
+    font-weight: 900;
+}
+
+p {
+    font-weight: 500;
+    text-align: left;
+}
+
+.fondo {
+    width: 100%;
+    height: 350px;
+    padding: 0;
+}
+
+.foto {
+    border-radius: 50%; /* Hace que la imagen sea redonda */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+
+}
+
+
+/* Estilo para el contenedor centralizado y las columnas */
+#presentacion {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+#presentacion p {
+    text-align: justify; /* Centra el texto en h1, h2 y p */
+}
+
+#skills {
+    background-color: rgb(194, 193, 138);
+    border-radius: 8px;
+    padding: 20px; /* Añade espacio interior */
+}
+
+.form-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container select, .form-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-container button {
+    background-color: #2323b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #0000ea;
+}
+
+.historial-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.historial {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.historial h2 {
+    margin-bottom: 10px;
+}
+
+.historial ul {
+    list-style: none;
+    padding: 0;
+}
+
+.historial li {
+    margin-bottom: 10px;
+}
+
+.historial p {
+    margin: 0;
+}
+
+/* Estilo para los botones de gestionar las entradas */
+.form-container button {
+    background-color: #000000f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: rgb(206, 11, 11);
+}
+
+/* Estilo para iconos de redes sociales */
+#linkedin, #facebook, #instagram, #github {
+    width: 100px; /* Ancho de los iconos */
+    margin: 0 10px; /* Espacio horizontal entre los iconos */
+}
+
+#facebook {
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+#spotify, #github {
+    width: 150px;
+}
+
+/* Estilo para los contenedores específicos */
+.social-media {
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    display: flex; /* Usa flexbox para alinear los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    align-items: center; /* Centra los iconos verticalmente */
+    flex-wrap: wrap; /* Permite que los iconos se envuelvan si no caben en una sola línea */
+    border-bottom: 3px solid black; /* Añade un borde en la parte inferior */
+    color: white;
+}
+
+/* Ajustes para colocar el texto sobre la imagen */
+.imagen-con-texto {
+    position: relative; /* Posiciona el contenedor relativamente para permitir el posicionamiento absoluto del texto */
+    width: 100%; /* Ajusta el contenedor al ancho del padre o ajusta según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.fondo {
+    display: block; /* Elimina el espacio blanco debajo de la imagen */
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 305px; /* Mantiene la proporción de la imagen */
+}
+
+.texto-sobre-imagen {
+    position: absolute; /* Posiciona el texto absolutamente dentro del contenedor */
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    color: white; /* Color del texto */
+    font-size: 54px; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espacio alrededor del texto */
+        white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+
+}
+
+/* Estilo para los elementos de la lista de entradas */
+.entry-item {
+    cursor: pointer;
+    padding: 5px;
+    border: none; /* Elimina el borde */
+    margin-bottom: 5px;
+    width: 200px;
+}
+
+.entry-item.selected {
+    background-color: #f0f0f0;
+}
+.historial ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el padding por defecto */
+}
+
+.historial li {
+    margin-bottom: 10px;
+    padding: 10px; /* Espacio interior de los elementos de la lista */
+    border: 1px solid #ccc; /* Añade un borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo ligeramente gris */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.historial li p {
+    margin: 0; /* Quita el margen del párrafo */
+    font-weight: normal; /* Quita el peso de fuente en el párrafo */
+}
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/png" href="fd71cc920df96dfb498587b177d3c658-removebg-preview.png">
+</head>
+
+<body>
+
+    <div class="imagen-con-texto">
+        <img src="884de81d29f37619ff17935475764213.jpg" alt="fondo" class="fondo">
+        <div class="texto-sobre-imagen">Yeison Andres Bedoya Diaz <p>Desarrollador de software Junior</p></div>
+    </div>
+
+    <div class="container" id="presentacion">
+        <div class="columna">
+            <h2>Presentación</h2>
+            <p>Mi nombre es Yeison Bedoya y soy desarrollador de software junior. Actualmente, estoy cursando estudios en la Universidad Santiago de Cali (USC), en Cali, Colombia. Me encuentro en las primeras etapas de mi carrera, enfocado en expandir mis conocimientos y habilidades en el campo del desarrollo de software.</p>
+        </div>
+        <div class="columna">
+            <img src="1718908072505.jpg" alt="foto" class="foto">
+        </div>
+    </div>
+
+    <div class="container" id="skills">
+        <h1>Historial Académico y Laboral</h1>
+        
+        <div class="form-container">
+            <label for="section">Selecciona la sección:</label>
+            <select id="section">
+                <option value="academic">Historial Académico</option>
+                <option value="work">Historial Laboral</option>
+            </select>
+            <input type="text" id="title" placeholder="Título de la entrada">
+            <input type="text" id="details" placeholder="Detalles de la entrada">
+            <button id="addEntry">Agregar Entrada</button>
+            <button id="editEntry">Editar Entrada</button>
+            <button id="deleteEntry">Eliminar Entrada</button>
+        </div>
+        
+        <div class="historial-container">
+            <div class="historial" id="academic">
+                <h2>Historial Académico</h2>
+                <ul>
+                    <li>Básica Primaria <p>Institución Educativa Cárdenas Mirriñao (2016)</p></li>
+                    <li>Secundaria <p>Institución Educativa De la Sagrada Familia (2022)</p></li>
+                    <li>Educación Universitaria <p>Universidad Santiago de Cali (Cursando)</p></li>
+                </ul>
+            </div>
+            <div class="historial" id="work">
+                <h2>Historial Laboral</h2>
+                <ul>
+                    <li>Mesero <p>Restaurante Paula (Laborando)</p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h2>¡SIGUEME EN MIS REDES SOCIALES!</h2>
+        <a href="https://co.linkedin.com/in/yeison-andr%C3%A9s-bedoya-diaz-546935139" target="_blank">
+            <img src="linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" alt="linkedin" id="linkedin">
+        </a>
+        <a href="https://www.facebook.com/andres.bedoya2703/" target="_blank">
+            <img src="facebook-6338507_1280.webp" alt="facebook" id="facebook">
+        </a>
+        <a href="https://www.instagram.com/andbed_tech27/" target="_blank">
+            <img src="Instagram_icon.png.webp" alt="instagram" id="instagram">
+        </a>
+        <a href="https://github.com/andybd2703" target="_blank">
+            <img src="png-clipart-github-computer-icons-logo-github-angle-white-removebg-preview.png" alt="github" id="github">
+        </a>
+        <a href="https://open.spotify.com/playlist/3r7HAYeJgTKg6hhm7TQuWZ?si=SsNXvlKZTQ6kMibf23KGJw" target="_blank">
+            <img src="111bac0e608be170a71e50cc07bd7ad2-removebg-preview.png" alt="spotify" id="spotify">
+        </a>    
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
